@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapActivityRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/firstNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="First Name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addFirstNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/firstNameEt"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Add First Name" />
+
+    <EditText
+        android:id="@+id/lastNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addFirstNameButton"
+        android:layout_margin="10dp"
+        android:hint="Last Name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addLastNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/lastNameEt"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Last Name" />
+
+</RelativeLayout>
