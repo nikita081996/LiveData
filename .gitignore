@@ -1,8 +1,11 @@
 /build
 
-/gradle
+
 /.idea
-/app.iml
+
 /gradlew
 /proguard-rules
+
+*.iml
+.gradle
 /local.properties
