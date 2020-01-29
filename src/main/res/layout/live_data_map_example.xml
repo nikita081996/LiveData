@@ -22,4 +22,26 @@
         android:layout_marginTop="10dp"
         android:text="@string/add_user" />
 
+    <EditText
+        android:id="@+id/newnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addUserButton"
+        android:layout_margin="10dp"
+        android:hint="Update"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/updateUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/newnameEditText"
+        android:layout_marginEnd="10dp"
+        android:text="Update List" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateUserButton"/>
 </RelativeLayout>

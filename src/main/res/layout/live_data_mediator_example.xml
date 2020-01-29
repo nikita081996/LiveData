@@ -41,4 +41,15 @@
         android:layout_marginTop="10dp"
         android:text="Add Last Name" />
 
+    <TextView
+        android:id="@+id/lengthTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/addLastNameButton"
+        android:layout_margin="80dp"
+        android:gravity="center"
+        android:inputType="text" />
+
 </RelativeLayout>

@@ -18,26 +18,22 @@
         </activity>
 
         <activity
-            android:name=".LiveDataExample"
+            android:name=".livedata.LiveDataExample"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".LiveDataMapExample"
+            android:name=".map.LiveDataMapExample"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".LiveDataSwitchMapExample"
+            android:name=".swichmap.LiveDataSwitchMapExample"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".SwitchMap"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".LiveDataMediatorExample"
+            android:name=".mediator_livedata.LiveDataMediatorExample"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
 

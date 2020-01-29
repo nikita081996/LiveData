@@ -2,7 +2,11 @@ package com.spartons.livedataexample
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.spartons.livedataexample.livedata.LiveDataExample
+import com.spartons.livedataexample.map.LiveDataMapExample
+import com.spartons.livedataexample.mediator_livedata.LiveDataMediatorExample
+import com.spartons.livedataexample.swichmap.LiveDataSwitchMapExample
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LiveDataMapExample::class.java))
         }
         liveDataSwitchMapExampleButton.setOnClickListener {
-            startActivity(Intent(this, SwitchMap::class.java))
+            startActivity(Intent(this, LiveDataSwitchMapExample::class.java))
         }
 
     }

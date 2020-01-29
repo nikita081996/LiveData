@@ -21,14 +21,31 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/addNewEditText"
         android:layout_marginEnd="10dp"
-        android:text="@string/search_user" />
+        android:text="@string/add_user" />
 
-    <android.support.v7.widget.RecyclerView
+    <EditText
+        android:id="@+id/newNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addUserButton"
+        android:layout_margin="10dp"
+        android:hint="Update"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/updateUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/newNameEditText"
+        android:layout_marginEnd="10dp"
+        android:text="Update List" />
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/userRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addUserButton">
+        android:layout_below="@+id/updateUserButton">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
