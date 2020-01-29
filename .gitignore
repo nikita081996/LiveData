@@ -1,1 +1,9 @@
 /build
+
+/gradle
+/.idea
+/app.iml
+/gradlew
+/proguard-rules
+/local.properties
+/.gitignore
