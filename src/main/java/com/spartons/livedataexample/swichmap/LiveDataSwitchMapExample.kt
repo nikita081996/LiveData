@@ -17,7 +17,7 @@ class LiveDataSwitchMapExample : AppCompatActivity(), View.OnClickListener {
         when (p0?.id) {
             R.id.addUserButton -> {
                 if (addNewEditText.text.toString() != "") {
-                    viewModel.searchUserByName(addNewEditText.text.toString())
+                    viewModel.addNewUser(addNewEditText.text.toString())
                     addNewEditText.text.clear()
                     hideKeyboard()
                 }

@@ -10,13 +10,13 @@ class UserRepo {
 
     private val temp = MutableLiveData<List<User>>()
 
-    fun addUser(name: String): List<User> {
+    fun addUserToList(name: String): List<User> {
         userList.add(User(name))
         temp.value = userList
         return temp.value as List<User>
     }
 
-    fun addNewUser(name: String): LiveData<List<User>> {
+    fun addNewUserToList(name: String): LiveData<List<User>> {
         userList.add(User(name))
         temp.value = userList
         return temp

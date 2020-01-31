@@ -45,12 +45,12 @@ class LiveDataMapExample : AppCompatActivity(), View.OnClickListener {
         userAdapter = UserAdapter(this, userList)
         userRecyclerView.adapter = userAdapter
 
-        val viewModel = ViewModelProviders.of(this).get(MapViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(MapViewModel::class.java)
 
         addUserButton.setOnClickListener(this)
         updateUserButton.setOnClickListener(this)
 
-        viewModel.userAddedData?.observe(this, Observer {
+        viewModel.userNameResult?.observe(this, Observer {
             if (userList.isNotEmpty())
                 userList.clear()
             userList.addAll(it!!)
