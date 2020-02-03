@@ -50,7 +50,7 @@ class LiveDataMapExample : AppCompatActivity(), View.OnClickListener {
         addUserButton.setOnClickListener(this)
         updateUserButton.setOnClickListener(this)
 
-        viewModel.userNameResult?.observe(this, Observer {
+        viewModel.userAddedData?.observe(this, Observer {
             if (userList.isNotEmpty())
                 userList.clear()
             userList.addAll(it!!)
